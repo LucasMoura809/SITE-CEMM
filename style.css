@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* style.css */
+
+:root {
+  --cor0: #F1E357;
+  --cor1: #E8D146;
+  --cor2: #F6C247;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+/* CABEÇALHO */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  background: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Para evitar que o conteúdo fique escondido atrás do header */
+body {
+  padding-top: 120px;
+}
+
+.header img {
+  height: 60px;
+  width: auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #1e90ff;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: #1e90ff;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 35px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section.alt {
+  background-color: #e6f0ff;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+.link{
+    color: #1e90ff;
+    text-decoration: none;
+}
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* RODAPÉ */
+.footer {
+  background: var(--cor0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
