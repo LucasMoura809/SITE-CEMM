@@ -33,11 +33,10 @@ body {
 }
 
 .top-header {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .header img {
@@ -46,6 +45,9 @@ body {
 }
 
 .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 22px;
   font-weight: bold;
   color: #000;
@@ -77,14 +79,14 @@ body {
 
 /* HERO SECTION */
 .hero {
-  height: 100vh;
-  background-image: url('hero.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  height: 47vh;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .overlay {
@@ -142,6 +144,33 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/*MATRÍCULA */
+.botao-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; /* Espaço antes e depois do botão */
+}
+
+.matricula-btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 15px 30px;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.matricula-btn:hover {
+  background-color: #e6b800;
+  cursor: pointer;
+}
+
 
 /* RODAPÉ */
 .footer {
